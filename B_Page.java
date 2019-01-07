@@ -114,8 +114,9 @@ public class B_Page {
 		comboBox_2.setBounds(136, 377, 526, 29);
 		frame.getContentPane().add(comboBox_2);
 		for(int i=0;i<Normal.B_Name.size();i++) {
-			comboBox_2.addItem(Login_B.NowLogin+Normal.B_Pay.get(i)+Normal.B_Location.get(i)+Normal.B_work.get(i));
-		}
+			if(Normal.B_Name.get(i).equals(Login_B.NowLogin)) {
+			comboBox_2.addItem(Normal.B_Name.get(i)+Normal.B_Pay.get(i)+Normal.B_Location.get(i)+Normal.B_work.get(i));
+		}}
 		
 
 		textField = new JTextField();
@@ -279,6 +280,10 @@ public class B_Page {
 						Normal.Findrequest.add(i);
 					}
 				}
+				
+				
+				
+				
 				if(Normal.Findrequest.size()>0) {
 					comboBox_3.setVisible(true);
 					label_5.setVisible(false);

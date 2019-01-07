@@ -52,6 +52,8 @@ public class Login {
 
 		Normal.B_Account.add("JN");
 		Normal.B_Password.add("JN87");
+		Normal.B_Account.add("CH");
+		Normal.B_Password.add("ang");
 		frame = new JFrame();
 		frame.setBounds(100, 100, 1280, 960);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
